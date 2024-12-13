@@ -1,0 +1,134 @@
+/* Reset and basic styles */
+/* ...existing styles... */
+
+/* Redesigned Color Palette */
+body {
+    background-color: #f5f5f5;
+    color: #2c3e50;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e3f2fd, #e0f7fa);
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #1abc9c; /* Turquoise */
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Collapsible Section */
+.collapsible {
+    background-color: #3498db; /* Light Blue */
+    color: #ffffff;
+    /* ...existing styles... */
+}
+
+.collapsible:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+/* Collapsible Content */
+.collapsible-content {
+    background-color: #ecf0f1; /* Light Gray */
+    color: #2c3e50;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+body.dark-mode header {
+    background-color: #34495e;
+}
+
+body.dark-mode .collapsible {
+    background-color: #16a085; /* Green */
+}
+
+body.dark-mode .collapsible:hover {
+    background-color: #1abc9c;
+}
+
+body.dark-mode .collapsible-content {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    background: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dark-mode-toggle:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+.dark-mode-toggle i {
+    font-size: 1.2rem;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+.back-to-top i {
+    font-size: 1.2rem;
+}
+
+/* Improve Text Readability */
+p, li, a {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .btn, .dark-mode-toggle, .back-to-top {
+        font-size: 0.9rem;
+    }
+}
